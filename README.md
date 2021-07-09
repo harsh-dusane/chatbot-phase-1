@@ -15,3 +15,8 @@ We have also tried ChatterBot which is also being used to built chatbots in pyth
 
 ###### Flask Project Layout
 We have followed flask project layout by using reference of flask documentation tutorial. Read more about it [here](https://flask.palletsprojects.com/en/2.0.x/tutorial/layout/)
+
+
+###### Version 1.0
+In first release CrononaBot hase limited functionality and respond to only basic greetings and simple covid queries.
+For the first release our goal was to achive basic functionality and to prepare foundation for the project.
