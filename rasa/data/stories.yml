@@ -28,3 +28,18 @@ stories:
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: thanks giving
+  steps:
+  - intent: thanks
+  - action: utter_welcome
+
+- story: covid info
+  steps:
+  - intent: covid_info
+  - action: utter_covid_info
+
+- story: symptoms info
+  steps:
+  - intent: covid_symptoms
+  - action: utter_covid_symptoms

@@ -8,6 +8,9 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - thanks
+  - covid_info
+  - covid_symptoms
 
 responses:
   utter_greet:
@@ -24,10 +27,19 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye, It was nice talking to you!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_welcome:
+  - text: "I am build to Assist You. It's my pleasure!"
+
+  utter_covid_info:
+  - text: "Coronaviruses are a large family of viruses that are known to cause illness ranging from the common cold to more severe diseases such as Middle East Respiratory Syndrome (MERS) and Severe Acute Respiratory Syndrome (SARS)."
+
+  utter_covid_symptoms:
+  - text: "It depends on the virus, but common signs include respiratory symptoms, fever, cough, shortness of breath, and breathing difficulties. In more severe cases, infection can cause pneumonia, severe acute respiratory syndrome, kidney failure and even death."
 
 session_config:
   session_expiration_time: 60

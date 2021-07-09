@@ -1,8 +1,7 @@
 import functools, json, requests
 from flask import (
-    Blueprint, flash, g, redirect, render_template, request, session, url_for
+    Blueprint, render_template, request,
 )
-from werkzeug.security import check_password_hash, generate_password_hash
 
 
 bp = Blueprint('bot', __name__)
@@ -22,14 +21,20 @@ def get_bot_response():
         Endpoint which gets user input from frontend and requests 
         rasa for processing and provide response
     """
-    val = request.args.get('msg')
-    data = json.dumps({"sender": "Rasa","message": val})
-    
-    headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
-    res = requests.post('http://localhost:5005/webhooks/rest/webhook', data= data, headers = headers)
-    
-    res = res.json()
-    val = res[0]['text']
+    try:
+        val = request.args.get('msg')
+        data = json.dumps({"sender": "Rasa","message": val})
+
+        headers = {'Content-type': 'application/json', 'Accept': 'text/plain'}
+        res = requests.post('http://localhost:5005/webhooks/rest/webhook', data= data, headers = headers)
+
+        res = res.json()
+        val = res[0]['text']
+
+    except Exception as e:
+        val = """My system is not working properly now.
+                Please try in sometime.
+                Apology for the inconvenience!"""
 
     return str(val)
 

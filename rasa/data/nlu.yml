@@ -66,6 +66,8 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+    - good
+    - Good!!
 
 - intent: mood_unhappy
   examples: |
@@ -90,3 +92,29 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: thanks
+  examples: |
+    - thanks
+    - thank you
+    - really appreciate your efforts
+    - you've saved my life
+    - really helpful
+
+- intent: covid_info
+  examples: |
+    - What is coronavirus?
+    - coronavirus
+    - covid19
+    - SARS-CoV
+    - novel coronavirus
+
+- intent: covid_symptoms
+  examples: |
+    - symptoms of covid19
+    - symptoms of coronavirus
+    - symptoms of corona
+    - symptoms of someone infected with coronavirus
+    - early signs of covid19
+    - signs of coronavirus
+    - comman signs
