@@ -1,10 +1,3 @@
-# from flask import Flask, request, jsonify
-# import requests
-
-# app = Flask(__name__)
-
-
-# @app.route('/query', methods=['POST'])
 from flask_app import create_app
 
 
