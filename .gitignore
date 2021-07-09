@@ -130,4 +130,4 @@ dmypy.json
 
 
 #rasa
-/rasa/results
+rasa/results/
