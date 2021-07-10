@@ -42,6 +42,7 @@ httptools==0.2.0
 httpx==0.15.4
 humanfriendly==9.2
 idna==2.10
+iniconfig==1.1.1
 itsdangerous==2.0.1
 Jinja2==3.0.1
 jmespath==0.10.0
@@ -64,9 +65,11 @@ opt-einsum==3.3.0
 packaging==20.9
 pamqp==2.3.0
 Pillow==8.3.1
+pluggy==0.13.1
 prompt-toolkit==2.0.10
 protobuf==3.17.3
 psycopg2-binary==2.8.6
+py==1.10.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
@@ -77,6 +80,7 @@ pymongo==3.10.1
 pyparsing==2.4.7
 pyrsistent==0.18.0
 pyTelegramBotAPI==3.8.1
+pytest==6.2.4
 python-crfsuite==0.9.7
 python-dateutil==2.8.1
 python-engineio==4.2.0
@@ -121,6 +125,7 @@ tensorflow-text==2.3.0
 termcolor==1.1.0
 terminaltables==3.1.0
 threadpoolctl==2.1.0
+toml==0.10.2
 tqdm==4.59.0
 twilio==6.50.1
 typeguard==2.12.1
