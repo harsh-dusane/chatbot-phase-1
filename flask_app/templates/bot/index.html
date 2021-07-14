@@ -118,12 +118,9 @@
         function botResponse(rawText) {
 
             document.getElementById('clshide').style.visibility = "visible";
-            console.log('after showing',x)
             // Bot Response
 
             $.get("/get", { msg: rawText }).done(function (data) {
-                console.log(rawText);
-                console.log(data);
                 const msgText = data;
                 document.getElementById("clshide").style.visibility='hidden';
                 appendMessage(BOT_NAME, BOT_IMG, "left", msgText);
